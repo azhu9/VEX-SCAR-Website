@@ -43,19 +43,19 @@ const Hero = () => {
 
   return (
     <div className="text-white">
-      <div className=" h-[1080px] w-full m-auto relative group">
+      <div className=" h-screen w-full m-auto relative group">
         {/* <div style={{    backgroundImage: `url(${slides[currentIndex]?.url ? slides[currentIndex].url : ''})`,}} */}
         <div id="test"
         className="w-full h-full bg-center bg-cover duration-300 relative align-middle">
-          <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+          <div className="hidden z-10 group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
             <BsChevronCompactLeft onClick={prevSlide} size={30}/>
           </div>
           
-          <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+          <div className="hidden z-10 group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
             <BsChevronCompactRight onClick={nextSlide} size={30}/>
           </div>
         
-          <div className="title-text max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
+          <div className="title-text max-w-[800px] mt-[-96px] w-full h-[80%] mx-auto text-center flex flex-col justify-center">
               <p className="text-[#b44417] font-bold py-1">RUTGERS IEEE VEXU DIVISION</p>
             <h1 className="animate-fade md:text-7xl sm:text-6xl text-4xl font-bold md:py-4">SCAR ROBOTICS</h1>
             <p className="animate-fade md:text-5xl sm:text-4xl text-l font-bold">VEXU TEAM</p>
