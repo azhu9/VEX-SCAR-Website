@@ -3,7 +3,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Info from './components/Info';
 import Awards from './components/Awards';
-import Contact from './components/Contact';
+import History from './components/History';
+import Sponsor from './components/Sponsor';
 import Footer from './components/Footer';
 
 function App() {
@@ -12,8 +13,9 @@ function App() {
     <Navbar/>
     <Hero/>
     <Info/>
+    <History/>
     <Awards/>
-    <Contact/>
+    <Sponsor/>
     <Footer/>
     </>
   );
