@@ -1,22 +1,21 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Info from './components/Info';
-import Awards from './components/Awards';
-import History from './components/History';
-import Sponsor from './components/Sponsor';
-import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import NoPage from './pages/NoPage';
+import Contact from './pages/Contact';
 
 function App() {
   return (
     <>
-    <Navbar/>
-    <Hero/>
-    <Info/>
-    <History/>
-    <Awards/>
-    <Sponsor/>
-    <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home/>} />
+          <Route path="/home" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/contact" element={<Contact/>} />
+          <Route path="*" element={<NoPage/>} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

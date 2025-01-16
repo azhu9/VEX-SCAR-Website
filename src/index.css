@@ -6,8 +6,13 @@ body {
   background-color: #000300;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 button {
   color: white;
+  background-color: red;
   width: 150px;
   border-radius: 0.375rem;
   margin-top: 1.5rem;
