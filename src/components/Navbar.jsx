@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
-import {ReactComponent as Logo} from '../assets/logo.svg';
+import Logo from '../assets/scar.png';
 
 const Navbar = () => {
   const [nav, setNav] = useState(true)
@@ -11,7 +11,8 @@ const Navbar = () => {
 
   return (
     <div className='flex justify-between items-center h-[8vh] max-w-[1440px] mx-auto px-4 text-white'>
-        <Logo className="lg:w-1/6 md:w-1/4 w-44 z-10"/>
+        {/* <Logo className="lg:w-1/6 md:w-1/4 w-44 z-10" alt="/"/> */}
+        <img src={Logo} className="lg:w-1/6 md:w-1/4 w-44 z-10" alt="logo"/>
         <ul className='hidden md:flex'>
             <li className='p-4'>Home</li>
             <li className='p-4'>About</li>
