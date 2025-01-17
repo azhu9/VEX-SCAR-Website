@@ -1,5 +1,6 @@
 import React from 'react'
-import Img from '../assets/img.jpg'
+import Img from '../assets/img.jpg';
+import { Link } from 'react-router-dom';
 
 const Info = () => {
   return (
@@ -10,7 +11,9 @@ const Info = () => {
                   <p className="text-red-500 font-bold">RUTGERS IEEE VEXU DIVISION</p>
                   <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2">Who are we?</h1>
                   <p>VEXU is a collegiate level robotics competition designed to pit your university against others in head to head matches. Each year the Robotics Education & Competition Foundation releases a game for which you must design your robot to be the best, whether through intelligent programming, robust build quality, or killer strategy. It is our job at Rutgers IEEE VEXU to allow students of all backgrounds and majors to design, build, program, and strategize together to put Rutgers on the map of international competitive robotics.</p>
-                  <button className="font-medium bg-red-800">Learn More</button>
+                  <Link to="/about">
+                    <button className="font-medium bg-red-800">Learn More</button>
+                  </Link>
                   </div>
           </div>
       </div>

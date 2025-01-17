@@ -22,9 +22,9 @@ const Navbar = () => {
         <img src={Logo} className="lg:w-1/6 md:w-1/4 w-44 z-10" alt="logo"/>
         <ul className='hidden md:flex'>
             <li className='p-4'><Link to="/home">Home</Link></li>
-            <li className='p-4'><a href="#info-section">About</a></li>
-            <li className='p-4'><a href="#awards-section">Awards</a></li>
-            <li className='p-4'><a href="#sponser-section">Sponsors</a></li>
+            <li className='p-4'><Link to="/about">About</Link></li>
+            <li className='p-4'><a href="/home#awards-section">Awards</a></li>
+            <li className='p-4'><a href="/home#sponser-section">Sponsors</a></li>
             <li className='p-4'><Link to="/contact">Contact</Link></li>
 
 

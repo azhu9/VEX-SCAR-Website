@@ -28,6 +28,7 @@ const Hero = () => {
     setCurrentIndex(newIndex);
   };
 
+/* The Navbar is 8vh tall and the hero is 92vh which makes them together the full height of the screens */
 
   return (
     <div className="text-white">
@@ -46,7 +47,7 @@ const Hero = () => {
               <p className="text-[#b44417] font-bold py-1">RUTGERS IEEE VEXU DIVISION</p>
             <h1 className="animate-fade md:text-7xl sm:text-6xl text-4xl font-bold">SCAR ROBOTICS</h1>
             <div>
-                <IoIosArrowDropdown className="animate-bounce mx-auto my-4 cursor-pointer" size={40}/>
+            <a href="#info-section"><IoIosArrowDropdown className="animate-bounce mx-auto my-4 cursor-pointer" size={40}/></a>
             </div>
           </div>
         </div>

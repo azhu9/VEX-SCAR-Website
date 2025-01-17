@@ -12,11 +12,35 @@ const Sponsor = () => {
           <p className="">Type in your email and send us a message!</p>
 
           <h2 className="md:text-2xl sm:text-xl text-l font-bold py-2">Current Sponsors</h2>
-            <div className="flex justify-between w-[80%] bg-white p-4 rounded-lg my-4" >
-              <img src={Nnl} className="max-w-40" alt="/"/>
-              <img src={Whimsy} className="max-w-40" alt="/"/>
-              <img src={Reng} className="max-w-48" alt="/"/>
-            </div>
+            <div className="w-[80%] md:mx-0 mx-auto bg-white p-4 rounded-lg my-8" >
+                  <div className="flex flex-wrap justify-around items-center  bg-white ">
+                    {/* Sponsor 1 */}
+                    <div className=" w-40 h-30">
+                      <img
+                        src={Nnl}
+                        alt="Naval Nuclear Laboratory"
+                        className="max-h-full max-w-full object-contain mx-auto"
+                      />
+                    </div>
+                    {/* Sponsor 2 */}
+                    <div className=" w-40 h-30">
+                      <img
+                        src={Whimsy}
+                        alt="Whimsy Tech"
+                        className="max-h-full max-w-full object-contain mx-auto"
+                      />
+                    </div>
+                    {/* Sponsor 3 */}
+                    <div className=" w-40 h-30">
+                      <img
+                        src={Reng}
+                        alt="Rutgers Engineering"
+                        className="max-h-full max-w-full object-contain mx-auto"
+                      />
+                    </div>
+                </div>
+          </div>
+            
         </div>
         <div className="my-4">
           {/* <div className="flex flex-col sm:flex-row items-center justify-between w-full">
