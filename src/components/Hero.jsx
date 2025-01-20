@@ -1,14 +1,11 @@
 import React from 'react';
-import {useState} from 'react';
+import {useState, useEffect, useCallback} from 'react';
 // import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs';
 import { IoIosArrowDropdown, IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
 import Vex1 from '../assets/vex1.jpg';
 import Vex2 from '../assets/vex2.jpg';
 import Vex3 from '../assets/vex3.jpeg';
 import Vex4 from '../assets/vex4.jpeg';
-
-
-
 
 const Hero = () => {
 
@@ -22,11 +19,19 @@ const Hero = () => {
     setCurrentIndex(newIndex);
   };
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
-  };
+  }, [currentIndex, slides.length]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval); // Clean up the interval
+  }, [nextSlide]); // Include memoized `nextSlide` in the dependency array
 
 /* The Navbar is 8vh tall and the hero is 92vh which makes them together the full height of the screens */
 
