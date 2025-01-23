@@ -28,7 +28,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000); // Change image every 5 seconds
+    }, 8000); // Change image every 5 seconds
 
     return () => clearInterval(interval); // Clean up the interval
   }, [nextSlide]); // Include memoized `nextSlide` in the dependency array

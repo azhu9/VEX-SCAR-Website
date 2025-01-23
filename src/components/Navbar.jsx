@@ -24,8 +24,7 @@ const Navbar = () => {
         <ul className='hidden md:flex'>
             <li className='p-4'><Link to="/home">Home</Link></li>
             <li className='p-4'><Link to="/about">About Us</Link></li>
-            <li className='p-4'><a href="/home#awards-section">Awards</a></li>
-            <li className='p-4'><a href="/home#sponser-section">Sponsors</a></li>
+            <li className='p-4'><Link to="/volunteering">Volunteering</Link></li>
             <li className='p-4'><Link to="/contact">Contact</Link></li>
 
 
@@ -36,11 +35,10 @@ const Navbar = () => {
         </div>
         <div className={!nav ? 'fixed left-0 top-0 w-[50%] h-full border-r border-r-gray-900 bg-blue-700 ease-in-out duration-500' : 'fixed left-[-100%]'}>
             <ul className='p-4 my-20'>
-              <li className='p-4'><Link to="/home">Home</Link></li>
-              <li className='p-4'><a href="#info-section">About Us</a></li>
-              <li className='p-4'><a href="#awards-section">Awards</a></li>
-              <li className='p-4'><a href="#sponser-section">Sponsors</a></li>
-              <li className='p-4'><Link to="/contact">Contact</Link></li>
+            <li className='p-4'><Link to="/home">Home</Link></li>
+            <li className='p-4'><Link to="/about">About Us</Link></li>
+            <li className='p-4'><Link to="/volunteering">Volunteering</Link></li>
+            <li className='p-4'><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
     </div>

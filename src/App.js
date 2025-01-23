@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import NoPage from './pages/NoPage';
 import Contact from './pages/Contact';
+import Volunteering from './pages/Volunteering';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route index element={<Home/>} />
           <Route path="/home" element={<Home/>} />
           <Route path="/about" element={<About/>} />
+          <Route path="/volunteering" element={<Volunteering/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="*" element={<NoPage/>} />
         </Routes>
