@@ -8,10 +8,12 @@ const ContactPage = () => {
       <img className="w-full h-[92vh] overflow-hidden object-cover opacity-30 relative align-middle" src={Bg2} alt="/"/>
 
         <div className="animate-fade title-text text-white">
-        <form class="max-w-lg mx-auto py-16" name="form" action="https://formspree.io/f/xzzddzqw" method="POST">
+        <form class="max-w-lg mx-auto py-16" name="form" action="https://formspree.io/f/xeoeeegn" method="POST">
             <div className="text-white lg:text-5xl  md:text-4xl sm:text-3xl text-2xl font-bold my-4">
                 Send us a message!
-
+            </div>
+            <div className="mb-4">
+              vexu.rutgersieee@gmail.com
             </div>
             <div class="relative z-0 w-full mb-5 group">
                 <input type="email" name="email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />

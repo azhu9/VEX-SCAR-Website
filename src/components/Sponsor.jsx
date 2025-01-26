@@ -44,7 +44,7 @@ const Sponsor = () => {
         </div>
         <div className="my-4">
 
-            <form class="max-w-lg mx-auto py-16" name="form" action="https://formspree.io/f/xzzddzqw" method="POST">            <div class="relative z-0 w-full mb-5 group">
+            <form class="max-w-lg mx-auto py-16" name="form" action="https://formspree.io/f/xeoeeegn" method="POST">            <div class="relative z-0 w-full mb-5 group">
                
             </div>
             
