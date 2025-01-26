@@ -1,25 +1,57 @@
 import React from 'react'
 
 import {
-    FaFacebookSquare,
-    FaGithubSquare,
-    FaInstagram,
-    FaTwitterSquare,
+  FaGithub, FaInstagram, FaLinkedin, FaDiscord
 }
 from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <div className="w-full bg-red-800">
-        <div className="max-w-[1150px]  mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300">
-            <div className="flex my-6 justify-between items-center">
-                <FaFacebookSquare size={30}/>
-                <FaGithubSquare size={30}/>
-                <FaInstagram size={30}/>
-                <FaTwitterSquare size={30}/>
-            </div>
+    <>
+    <footer className="bg-gray-800 text-white py-6">
+      <div className="container mx-auto flex flex-col items-center space-y-4">
+        {/* Social Icons */}
+        <div className="flex space-x-6">
+          <a
+            href="https://github.com/azhu9/VEX-SCAR-Website"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-400"
+          >
+            <FaGithub size={24} />
+          </a>
+          <a
+            href="https://www.instagram.com/rutgersvex/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-400"
+          >
+            <FaInstagram size={24} />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/rutgersvex/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-400"
+          >
+            <FaLinkedin size={24} />
+          </a>
+          <a
+            href="https://discord.gg/Pf28kh8Use"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-400"
+          >
+            <FaDiscord size={24} />
+          </a>
         </div>
-    </div>
+        {/* Footer Text */}
+        <p className="text-sm text-gray-400">
+          © {new Date().getFullYear()} Rutgers IEEE. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    </>
   )
 }
 

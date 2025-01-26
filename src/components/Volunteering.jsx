@@ -1,5 +1,5 @@
 import React from 'react'
-import Bg1 from "../assets/bg1.jpg";
+import Bg1 from "../assets/backgrounds/bg1.jpg";
 import { IoIosArrowDropdown } from "react-icons/io";
 
 const Volunteering = () => {
@@ -14,8 +14,8 @@ const Volunteering = () => {
         </div>
     </div>
 
-    <div className="w-full h- bg-white">
-
+    <div className="w-full h-[100px] bg-white">
+    sadpfoiajsd
     </div>
 
     </>

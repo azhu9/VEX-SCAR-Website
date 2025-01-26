@@ -2,10 +2,10 @@ import React from 'react';
 import {useState, useEffect, useCallback} from 'react';
 // import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs';
 import { IoIosArrowDropdown, IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
-import Vex1 from '../assets/vex1.jpg';
-import Vex2 from '../assets/vex2.jpg';
-import Vex3 from '../assets/vex3.jpeg';
-import Vex4 from '../assets/vex4.jpeg';
+import Vex1 from '../assets/carousel/vex1.jpg';
+import Vex2 from '../assets/carousel/vex2.jpg';
+import Vex3 from '../assets/carousel/vex3.jpeg';
+import Vex4 from '../assets/carousel/vex4.jpeg';
 
 const Hero = () => {
 

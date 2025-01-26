@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from "./Section";
-import Bg from "../assets/bg.jpg";
+import Bg from "../assets/backgrounds/bg.jpg";
 import { IoIosArrowDropdown } from "react-icons/io";
 
 const History = () => {
@@ -16,9 +16,6 @@ const History = () => {
           ABOUT US
           <a href="#section"><IoIosArrowDropdown className="animate-bounce mx-auto my-4 cursor-pointer" size={40}/></a>
         </div>
-        
-        
-
       </div>
 
       <div className="bg-white" id="section">
