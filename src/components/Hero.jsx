@@ -52,7 +52,7 @@ const Hero = () => {
               <p className="text-[#b44417] font-bold py-1">RUTGERS IEEE VEXU DIVISION</p>
             <h1 className="animate-fade md:text-7xl sm:text-6xl text-4xl font-bold">SCAR ROBOTICS</h1>
             <div>
-            <a href="#info-section"><IoIosArrowDropdown className="animate-bounce mx-auto my-4 cursor-pointer" size={40}/></a>
+            <a href="#info-section"><IoIosArrowDropdown className="animate-bounce mx-auto my-8 cursor-pointer" size={40}/></a>
             </div>
           </div>
         </div>

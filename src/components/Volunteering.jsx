@@ -9,15 +9,15 @@ const Volunteering = () => {
   return (
     <>
     <div>
-      <img className="w-full h-[92vh] overflow-hidden object-cover opacity-50 relative align-middle" src={Bg1} alt="/"/>
+      <img className="w-full h-[92vh] overflow-hidden object-cover opacity-30 relative align-middle" src={Bg1} alt="/"/>
 
         <div className="animate-fade md:text-7xl sm:text-6xl text-4xl font-bold title-text text-white">
           Volunteering
-          <a href="#section"><IoIosArrowDropdown className="animate-bounce mx-auto my-4 cursor-pointer" size={40}/></a>
+          <a href="#section"><IoIosArrowDropdown className="animate-bounce mx-auto my-8 cursor-pointer" size={40}/></a>
         </div>
     </div>
 
-    <div className="w-full bg-white py-16 px-4" id="info-section">
+    <div className="w-full bg-white py-16 px-4" id="section">
           <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
               <img className="w-[500px] mx-auto my-4 rounded-lg" src={Volunteer} alt="/"></img>
               <div className="flex flex-col justify-center mx-4">

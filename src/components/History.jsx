@@ -3,6 +3,8 @@ import Section from "./Section";
 import Bg from "../assets/backgrounds/bg.jpg";
 import { IoIosArrowDropdown } from "react-icons/io";
 
+import img2019 from "../assets/history/2019-20.png";
+
 const History = () => {
 
   return (
@@ -14,7 +16,7 @@ const History = () => {
 
         <div className="animate-fade md:text-7xl sm:text-6xl text-4xl font-bold title-text text-white">
           ABOUT US
-          <a href="#section"><IoIosArrowDropdown className="animate-bounce mx-auto my-4 cursor-pointer" size={40}/></a>
+          <a href="#section"><IoIosArrowDropdown className="animate-bounce mx-auto my-8 cursor-pointer" size={40}/></a>
         </div>
       </div>
 
@@ -58,16 +60,16 @@ const History = () => {
         title="2019-2020: Tower Takeover"
         teamNames="SKAR & RUSK"
         description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-        awards="Tournament Champion, Design Award, Excellence Award, Worlds Rank: 15"
+        awards="Tournament Champion, Design Award, Excellence Award, Worlds Ranking: 15"
         image="https://react.semantic-ui.com/images/image-16by9.png"
         />
-        <Section
+        {/* <Section
         title="2017-2018: In the Zone"
         teamNames="RUSK"
         description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
         awards="N/A"
         image="https://react.semantic-ui.com/images/image-16by9.png"
-        />
+        /> */}
         <Section
         title="2016-2017: Starstruck"
         teamNames="RUSK"
