@@ -17,9 +17,10 @@ const Navbar = () => {
 */
 
   return (
-    <div className='flex justify-between items-center h-[8vh] max-w-[1440px] mx-auto px-4 text-white'>
+    <div className="bg-black sticky top-0">
+    <div className=' z-50 bg-black flex justify-between items-center h-[8vh] max-w-[1440px] mx-auto px-4 text-white'>
         {/* <Link to="/home"> */}
-          <img src={Logo} className="lg:w-1/6 md:w-1/4 w-44 z-10"  alt="logo"/>
+          <img src={Logo} className="lg:w-1/6 md:w-1/4 w-44 z-99"  alt="logo"/>
         {/* </Link> */}
         <ul className='hidden md:flex'>
             <li className='p-4'><Link to="/home">Home</Link></li>
@@ -29,18 +30,26 @@ const Navbar = () => {
 
 
         </ul>
-        <div onClick={handleNav} className="block md:hidden">
+        <div onClick={handleNav} className="block md:hidden z-99">
           {!nav ? <AiOutlineClose size={25}/> : <AiOutlineMenu size ={25}/>}
-          
         </div>
-        <div className={!nav ? 'fixed left-0 top-0 w-[50%] h-full border-r border-r-gray-900 bg-blue-700 ease-in-out duration-500' : 'fixed left-[-100%]'}>
-            <ul className='p-4 my-20'>
-            <li className='p-4'><Link to="/home">Home</Link></li>
+        
+        <div className={`${ !nav ? 'z-20 fixed left-0 top-0 w-[100%] h-full bg-gray-800 border-r border-gray-700 drop-shadow-xl ease-in-out duration-300' : 'fixed left-[-100%]'}`}>
+        
+        <div onClick={handleNav} className="block md:hidden h-[8vh] py-1 m-4 fixed top-0 right-0">
+          {!nav ? <AiOutlineClose size={25}/> : <AiOutlineMenu size ={25}/>}
+        </div>
+        <div className="flex items-center justify-center text-white text-xl h-full">
+          <ul className="p-4 text-center space-y-8">
+          <li className='p-4'><Link to="/home">Home</Link></li>
             <li className='p-4'><Link to="/about">About Us</Link></li>
             <li className='p-4'><Link to="/volunteering">Volunteering</Link></li>
             <li className='p-4'><Link to="/contact">Contact</Link></li>
           </ul>
+          </div>
         </div>
+        
+    </div>
     </div>
   )
 }

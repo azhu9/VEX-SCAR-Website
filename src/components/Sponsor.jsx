@@ -33,7 +33,7 @@ const Sponsor = () => {
           <p className="">Type in your email and send us a message!</p>
 
           <h2 className="md:text-2xl sm:text-xl text-l font-bold py-2">Current Sponsors</h2>
-            <div className="w-[80%] lg:mx-0 mx-auto p-4 rounded-lg my-16" >
+            <div className="w-[80%] lg:mx-0 mx-auto p-4 rounded-lg my-20" >
                   <div className="flex flex-wrap justify-around items-center">
                     {/* Sponsor 1 */}
                     <div className=" w-40 h-30">
@@ -112,11 +112,11 @@ const Sponsor = () => {
 
     <div className="max-w-[1150px] mx-auto">
       <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold pb-4">Our Alumni Network</h1>
-      <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-4 max-w-screen-lg mx-auto m-8">
+      <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-4 max-w-screen-lg mx-auto my-8">
         {companies.map((company) => (
           <div
             key={company.name}
-            className="flex items-center justify-center grayscale p-6"
+            className="flex items-center justify-center grayscale py-6"
           >
             <img
               src={company.logo}
