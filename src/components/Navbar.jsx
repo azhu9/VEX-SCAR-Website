@@ -34,7 +34,7 @@ const Navbar = () => {
           {!nav ? <AiOutlineClose size={25}/> : <AiOutlineMenu size ={25}/>}
         </div>
         
-        <div className={`${ !nav ? 'z-20 fixed left-0 top-0 w-[100%] h-full bg-gray-800 border-r border-gray-700 drop-shadow-xl ease-in-out duration-300' : 'fixed left-[-100%]'}`}>
+        <div className={`${ !nav ? 'z-50 fixed left-0 top-0 w-[100%] h-full bg-gray-800 border-r border-gray-700 drop-shadow-xl ease-in-out duration-300' : 'fixed left-[-100%]'}`}>
         
         <div onClick={handleNav} className="block md:hidden h-[8vh] py-1 m-4 fixed top-0 right-0">
           {!nav ? <AiOutlineClose size={25}/> : <AiOutlineMenu size ={25}/>}

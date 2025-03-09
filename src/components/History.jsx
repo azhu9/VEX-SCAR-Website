@@ -20,9 +20,9 @@ const History = () => {
 
     <>
       <div>
-      <img className="w-full h-[92vh] overflow-hidden object-cover opacity-80 relative align-middle" src={Bg} alt="/"/>
+      <img className="-z-10 w-full h-[92vh] overflow-hidden object-cover opacity-80 relative align-middle" src={Bg} alt="/"/>
 
-        <div className="animate-fade md:text-7xl sm:text-6xl text-4xl font-bold title-text text-white">
+        <div className="-z-10 animate-fade md:text-7xl sm:text-6xl text-4xl font-bold title-text text-white">
           ABOUT US
           <a href="#section"><IoIosArrowDropdown className="animate-bounce mx-auto my-8 cursor-pointer" size={40}/></a>
         </div>

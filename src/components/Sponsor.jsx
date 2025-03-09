@@ -13,7 +13,7 @@ import Boring from "../assets/companies/Boring-Company.png";
 import Northrop from "../assets/companies/Northrop.png";
 import Deutsche from "../assets/companies/Deutsche-Bank.png";
 import Epic from "../assets/companies/Epic.png";
-import Uwash from "../assets/companies/Uwash.png";
+// import Uwash from "../assets/companies/Uwash.png";
 import Rutgers from "../assets/companies/Rutgers.png";
 
 
@@ -28,7 +28,7 @@ const companies = [
   { name: "Northrop", logo: Northrop },
   { name: "Deutsche", logo: Deutsche },
   { name: "Epic", logo: Epic },
-  { name: "Uwash", logo: Uwash },
+  // { name: "Uwash", logo: Uwash },
   { name: "Rutgers", logo: Rutgers },
 
 ]

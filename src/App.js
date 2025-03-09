@@ -4,6 +4,7 @@ import About from './pages/About';
 import NoPage from './pages/NoPage';
 import Contact from './pages/Contact';
 import Volunteering from './pages/Volunteering';
+import Test from './pages/Test';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/volunteering" element={<Volunteering/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="*" element={<NoPage/>} />
+          <Route path="/test" element={<Test/>} />
         </Routes>
       </BrowserRouter>
     </>
