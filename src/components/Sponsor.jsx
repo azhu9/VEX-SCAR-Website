@@ -4,24 +4,33 @@ import Whimsy from '../assets/sponsors/whimsy.png';
 import Reng from '../assets/sponsors/reng.png';
 
 import Lockheed from "../assets/companies/Lockheed.png";
+import Google from "../assets/companies/Google.webp";
+import Tesla from "../assets/companies/Tesla.png"
 import Merck from "../assets/companies/Merck.png";
+import L3 from "../assets/companies/L3-Harris.png";
+import Accenture from "../assets/companies/Accenture.png";
 import Boring from "../assets/companies/Boring-Company.png";
 import Northrop from "../assets/companies/Northrop.png";
 import Deutsche from "../assets/companies/Deutsche-Bank.png";
 import Epic from "../assets/companies/Epic.png";
-import Uwash from "../assets/companies/UWash.png";
+import Uwash from "../assets/companies/Uwash.png";
 import Rutgers from "../assets/companies/Rutgers.png";
 
 
-const companies =[
+const companies = [
   { name: "Lockheed", logo: Lockheed },
+  { name: "Google", logo: Google},
+  { name: "Tesla", logo: Tesla},
   { name: "Merck", logo: Merck },
+  { name: "L3 Harris", logo: L3 },
+  { name: "Accenture", logo: Accenture },
   { name: "Boring-Company", logo: Boring },
   { name: "Northrop", logo: Northrop },
   { name: "Deutsche", logo: Deutsche },
   { name: "Epic", logo: Epic },
-  { name: "UWash", logo: Uwash },
+  { name: "Uwash", logo: Uwash },
   { name: "Rutgers", logo: Rutgers },
+
 ]
 
 const Sponsor = () => {

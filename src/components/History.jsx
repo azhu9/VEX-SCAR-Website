@@ -3,14 +3,22 @@ import Section from "./Section";
 import Bg from "../assets/backgrounds/bg.jpg";
 import { IoIosArrowDropdown } from "react-icons/io";
 
-import img2019 from "../assets/history/2019-20.png";
+import img2425 from "../assets/history/24-25.JPG";
+import img2324 from "../assets/carousel/vex2.jpg";
+import img2223 from "../assets/history/22-23.jpg";
+// import img2122 from "../assets/history/21-22.webp";
+import img2021 from "../assets/history/20-21.png";
+import img1920 from "../assets/history/19-20.png";
+import img1819 from "../assets/history/18-19.jpg";
+import img1718 from "../assets/history/17-18.jpg";
+
+
 
 const History = () => {
 
   return (
 
     <>
-
       <div>
       <img className="w-full h-[92vh] overflow-hidden object-cover opacity-80 relative align-middle" src={Bg} alt="/"/>
 
@@ -24,58 +32,78 @@ const History = () => {
         <Section
         title="2024-25: High Stakes"
         teamNames="SCAR"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        description="The High Stakes season is currently being played and our team is preparing for the World Championship with a qualifcation through our #28 Skills ranking in the world. Our season has been successful and rewarding with a big thanks to your new sponser Whismy Tech supplying us with parts and a generous donation."
+        captains="Mahdhav Rawal, Jouan Yu"
+        leads="Andy Zhu, Marco Hu, Ivan Shi"
         awards="TBD"
-        image="https://react.semantic-ui.com/images/image-16by9.png"
+        image={img2425}
         />
         <Section
-          title="2023-24: Over Under"
+        title="2023-24: Over Under"
         teamNames="SCAR & SCAR 2"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        description=""
+        captains="Kyle De Guzman, Brian Chen"
+        leads="Jouan Yu, Mahdhav Rawal, Khoi Dinh, Andy Zhu"
         awards="Tournament Champion, Robot Skills Champion, Worlds Ranking 17 & 24"
-        image="https://react.semantic-ui.com/images/image-16by9.png"
+        image={img2324}
         />
         <Section
         title="2022-23: Spin Up"
         teamNames="SKAR"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        description=""
+        captains="Jack Lowry"
+        leads="Zach Soriano, Kyle De Guzman"
         awards="Judges Award, Design Award, Worlds Ranking: 14"
-        image="https://react.semantic-ui.com/images/image-16by9.png"
+        image={img2223}
         />
+        {/* <YoutubePlayer videoId="8isLmoizb6A" /> */}
         <Section
         title="2021-22: Tipping Point"
         teamNames="SKAR"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        description=""
+        captains=""
+        leads=""
         awards="Judges Award, Design Award, Worlds Ranking: 2"
-        image="https://react.semantic-ui.com/images/image-16by9.png"
+        videoId="8isLmoizb6A"
         />
         <Section
         title="2020-21: Change Up"
         teamNames="SKAR"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        description=""
         awards="N/A"
-        image="https://react.semantic-ui.com/images/image-16by9.png"
+        image={img2021}
         />
         <Section
         title="2019-2020: Tower Takeover"
         teamNames="SKAR & RUSK"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        description=""
         awards="Tournament Champion, Design Award, Excellence Award, Worlds Ranking: 15"
-        image="https://react.semantic-ui.com/images/image-16by9.png"
+        image={img1920}
         />
-        {/* <Section
+        <Section
+        title="2018-2019: Turning Point"
+        teamNames="RUSK"
+        description=""
+        captains="Timothy Petersen, Mathew Chan"
+        leads="Israel Jackson, Peter Doroshenko"
+        awards="Tournament Champion, Design Award, Excellence Award, Worlds Ranking: 15"
+        image={img1819}
+        />
+        <Section
         title="2017-2018: In the Zone"
         teamNames="RUSK"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        description=""
+        captains="Kevin Quizhpi, Rupesh Chinta"
+        leads="Hari Vijayakumar, Atul Srivastava"
         awards="N/A"
-        image="https://react.semantic-ui.com/images/image-16by9.png"
-        /> */}
+        image={img1718}
+        />
         <Section
         title="2016-2017: Starstruck"
         teamNames="RUSK"
-        description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        description=""
         awards="Excellence Award, Worlds Ranking: 15"
-        image="https://react.semantic-ui.com/images/image-16by9.png"
+        videoId="9f9nFUleKmE"
         />
       </div>
 
