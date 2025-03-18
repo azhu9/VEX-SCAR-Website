@@ -8,16 +8,16 @@ import { Link } from 'react-router-dom';
 const Volunteering = () => {
   return (
     <>
-    <div className="-z-20 ">
-      <img className="-z-10 w-full h-[92vh] overflow-hidden object-cover opacity-30 relative align-middle" src={Bg1} alt="/"/>
+    <div className="">
+      <img className="w-full h-[calc(100vh-80px)] mt-[80px] overflow-hidden object-cover opacity-30 relative align-middle" src={Bg1} alt="/"/>
 
-        <div className="-z-10 animate-fade md:text-7xl sm:text-6xl text-4xl font-bold title-text text-white">
+        <div className="animate-fade md:text-7xl sm:text-6xl text-4xl font-bold title-text text-white">
           Volunteering
           <a href="#section"><IoIosArrowDropdown className="animate-bounce mx-auto my-8 cursor-pointer" size={40}/></a>
         </div>
     </div>
 
-    <div className=" -z-10 w-full bg-white py-16 px-4" id="section">
+    <div className="w-full bg-white py-16 px-4" id="section">
           <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
               <img className="w-[500px] mx-auto my-4 rounded-lg" src={Volunteer} alt="/"></img>
               <div className="flex flex-col justify-center mx-4">

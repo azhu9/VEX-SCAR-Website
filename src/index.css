@@ -19,6 +19,7 @@ button {
   margin-bottom: 1.5rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+  pointer-events: none;
 }
 
 .title-text {
@@ -26,4 +27,13 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.nav-list{
+  padding: 0.75rem;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #e5e7eb; /* Light gray border */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer;
 }

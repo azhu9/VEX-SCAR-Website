@@ -15,7 +15,7 @@ var opts;
   if(width <= 450){ //mobile
     opts = {
       height: "196",
-      width: "348",
+      width: "310",
       playerVars: {
         autoplay: 0, // Auto-play the video
       },

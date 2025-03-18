@@ -17,11 +17,11 @@ const Navbar = () => {
 */
 
   return (
-    <div className="bg-black sticky top-0">
-    <div className=' z-50 bg-black flex justify-between items-center h-[8vh] max-w-[1440px] mx-auto px-4 text-white'>
-        {/* <Link to="/home"> */}
-          <img src={Logo} className="lg:w-1/6 md:w-1/4 w-44 z-99"  alt="logo"/>
-        {/* </Link> */}
+    <div className=" z-50 bg-black fixed w-full top-0">
+    <div className=' z-50 bg-black flex justify-between items-center h-[80px] max-w-[1440px] mx-auto px-4 text-white'>
+        <Link to="/home" className="block">
+          <img src={Logo} className=""  alt="logo"/>
+        </Link>
         <ul className='hidden md:flex'>
             <li className='p-4'><Link to="/home">Home</Link></li>
             <li className='p-4'><Link to="/about">About Us</Link></li>
@@ -31,20 +31,20 @@ const Navbar = () => {
 
         </ul>
         <div onClick={handleNav} className="block md:hidden z-99">
-          {!nav ? <AiOutlineClose size={25}/> : <AiOutlineMenu size ={25}/>}
+          {!nav ? <></> : <AiOutlineMenu size ={25}/>}
         </div>
         
-        <div className={`${ !nav ? 'z-50 fixed left-0 top-0 w-[100%] h-full bg-gray-800 border-r border-gray-700 drop-shadow-xl ease-in-out duration-300' : 'fixed left-[-100%]'}`}>
+        <div className={`${ !nav ? 'z-50 fixed left-0 top-0 w-[100%] h-full bg-black border-r border-gray-700 drop-shadow-xl ease-in-out duration-300' : 'fixed left-[100%]'}`}>
         
-        <div onClick={handleNav} className="block md:hidden h-[8vh] py-1 m-4 fixed top-0 right-0">
-          {!nav ? <AiOutlineClose size={25}/> : <AiOutlineMenu size ={25}/>}
+        <div onClick={handleNav} className="block md:hidden h-[80px] py-2 m-5 fixed top-0 right-0">
+          {!nav ? <AiOutlineClose size={25}/> : <></>}
         </div>
         <div className="flex items-center justify-center text-white text-xl h-full">
-          <ul className="p-4 text-center space-y-8">
-          <li className='p-4'><Link to="/home">Home</Link></li>
-            <li className='p-4'><Link to="/about">About Us</Link></li>
-            <li className='p-4'><Link to="/volunteering">Volunteering</Link></li>
-            <li className='p-4'><Link to="/contact">Contact</Link></li>
+          <ul className="p-4 text-center space-y-5 w-1/2">
+          <li className='nav-list'><Link to="/home">Home</Link></li>
+            <li className='nav-list'><Link to="/about">About Us</Link></li>
+            <li className='nav-list'><Link to="/volunteering">Volunteering</Link></li>
+            <li className='nav-list'><Link to="/contact">Contact</Link></li>
           </ul>
           </div>
         </div>
