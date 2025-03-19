@@ -7,7 +7,7 @@ const ContactPage = () => {
     <div>
       <img className="-z-10 w-full h-[calc(100vh-80px)] mt-[80px] overflow-hidden object-cover opacity-30 relative align-middle" src={Bg2} alt="/"/>
 
-        <div className="animate-fade title-text h-[calc(100-vh-80px)]  text-white w-full">
+        <div className="animate-fade title-text h-[calc(100-vh-80px)] mt-8 text-white w-full">
         <form class=" mx-auto max-w-[70%] py-16" name="form" action="https://formspree.io/f/xeoeeegn" method="POST">
             <div className="text-white lg:text-5xl  md:text-4xl sm:text-3xl text-2xl font-bold my-4">
                 Send us a message!

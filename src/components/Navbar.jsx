@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
 import Logo from '../assets/scar.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [nav, setNav] = useState(true)
+  const location = useLocation();
 
   const handleNav = () => {
     setNav(!nav)
@@ -40,12 +41,24 @@ const Navbar = () => {
           {!nav ? <AiOutlineClose size={25}/> : <></>}
         </div>
         <div className="flex items-center justify-center text-white text-xl h-full">
-          <ul className="p-4 text-center space-y-5 w-1/2">
-          <li className='nav-list'><Link to="/home">Home</Link></li>
-            <li className='nav-list'><Link to="/about">About Us</Link></li>
-            <li className='nav-list'><Link to="/volunteering">Volunteering</Link></li>
-            <li className='nav-list'><Link to="/contact">Contact</Link></li>
-          </ul>
+        <ul className="p-4 text-center space-y-10 w-1/2">
+        {[
+          { name: "Home", path: "/home" },
+          { name: "About Us", path: "/about" },
+          { name: "Volunteering", path: "/volunteering" },
+          { name: "Contact", path: "/contact" },
+        ].map((item) => (
+          <Link to={item.path} key={item.name} className="block my-5">
+            <li
+              className={`nav-list p-2 rounded ${
+                location.pathname === item.path ? "bg-gray-800" : ""
+              }`}
+            >
+              {item.name}
+            </li>
+          </Link>
+        ))}
+      </ul>
           </div>
         </div>
         
