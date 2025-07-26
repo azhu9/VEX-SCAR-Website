@@ -1,5 +1,5 @@
 import React from 'react'
-import Bg1 from "../assets/backgrounds/bg1.jpg";
+import Bg1 from "../assets/backgrounds/bg1.webp";
 import Volunteer from "../assets/volunteer.jpg"
 import { IoIosArrowDropdown } from "react-icons/io";
 import { Link } from 'react-router-dom';
@@ -9,7 +9,7 @@ const Volunteering = () => {
   return (
     <>
     <div className="">
-      <img className="w-full h-[calc(100vh-80px)] mt-[80px] overflow-hidden object-cover opacity-30 relative align-middle" src={Bg1} alt="/"/>
+      <img className="w-full h-[calc(100vh-80px)] mt-[80px] overflow-hidden object-cover opacity-30 relative align-middle" src={Bg1} alt="/" loading="lazy"/>
 
         <div className="animate-fade md:text-7xl sm:text-6xl text-4xl font-bold title-text text-white">
           Volunteering
@@ -19,7 +19,7 @@ const Volunteering = () => {
 
     <div className="w-full bg-white py-16 px-4" id="section">
           <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
-              <img className="w-[500px] mx-auto my-4 rounded-lg" src={Volunteer} alt="/"></img>
+              <img className="w-[500px] mx-auto my-4 rounded-lg" src={Volunteer} alt="/" loading="lazy"></img>
               <div className="flex flex-col justify-center mx-4">
                   <p className="text-red-500 font-bold">RUTGERS IEEE VEXU DIVISION</p>
                   <h1 className="md:text-4xl sm:text-3xl text-2xl font-bold py-2">Need volunteers?</h1>

@@ -1,19 +1,20 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
-import Error from '../components/Error';
+import SponsorsPage from '../components/SponsorsPage';
 import Footer from '../components/Footer';
 import Scroll from "../ScrollToTop";
 
 
-const NoPage = () => {
+
+const Sponsors = () => {
   return (
     <div>
-      <Scroll/> 
-      <Navbar/>
-      <Error/>
-      <Footer/>
+        <Scroll/>
+        <Navbar/>
+        <SponsorsPage/>
+        <Footer/>
     </div>
   )
 }
 
-export default NoPage
+export default Sponsors

@@ -4,11 +4,11 @@ import YoutubePlayer from "./YoutubePlayer"
 const Section = ({title, teamNames, description, captains, leads, awards, image, videoId}) => {
   return (
     <div className="w-full p-4">
-      <div className="max-w-[1150px] mx-auto grid lg:grid-cols-2 bg-slate-100 rounded-xl">
+      <div className="max-w-[1150px] mx-auto grid lg:grid-cols-2 bg-slate-100 rounded-xl shadow-lg">
         <div className="my-auto m-4">
           {
             image ? (
-              <img src={image} className="my-4 rounded-xl" alt="/"/>
+              <img src={image} className="my-4 rounded-xl" alt="/" loading="lazy"/>
             ) : videoId ? (
               <div className="my-4 flex center">
                 <YoutubePlayer videoId={videoId}/>

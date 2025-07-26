@@ -1,11 +1,11 @@
 import React from 'react'
-import Bg2 from "../assets/backgrounds/bg2.jpg";
+import Bg2 from "../assets/backgrounds/bg2.webp";
 
 const ContactPage = () => {
   return (
     <>
     <div>
-      <img className="-z-10 w-full h-[calc(100vh-80px)] mt-[80px] overflow-hidden object-cover opacity-30 relative align-middle" src={Bg2} alt="/"/>
+      <img className="-z-10 w-full h-[calc(100vh-80px)] mt-[80px] overflow-hidden object-cover opacity-30 relative align-middle" src={Bg2} alt="/" loading="lazy" />
 
         <div className="animate-fade title-text h-[calc(100-vh-80px)] mt-8 text-white w-full">
         <form class=" mx-auto max-w-[70%] py-16" name="form" action="https://formspree.io/f/xeoeeegn" method="POST">
@@ -49,7 +49,7 @@ const ContactPage = () => {
                     class="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-base focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 ></textarea>
             </div>
-            <button className="font-medium text-l bg-red-800" type="submit">Submit</button>
+            <button className="font-medium text-l bg-red-800 cursor-pointer" type="submit">Submit</button>
 
           </form>
         </div>

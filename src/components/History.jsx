@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from "./Section";
-import Bg from "../assets/backgrounds/bg.jpg";
+import Bg from "../assets/backgrounds/bg.webp";
 import { IoIosArrowDropdown } from "react-icons/io";
 
 import img2425 from "../assets/history/24-25.JPG";
@@ -20,7 +20,7 @@ const History = () => {
 
     <>
       <div>
-      <img className="-z-10 w-full h-[calc(100vh-80px)] mt-[80px] overflow-hidden object-cover opacity-80 relative align-middle" src={Bg} alt="/"/>
+      <img className="-z-10 w-full h-[calc(100vh-80px)] mt-[80px] overflow-hidden object-cover opacity-80 relative align-middle" src={Bg} alt="/" loading="lazy"/>
 
         <div className="z-10 animate-fade md:text-7xl sm:text-6xl text-4xl font-bold title-text text-white">
           ABOUT US
@@ -32,10 +32,10 @@ const History = () => {
         <Section
         title="2024-25: High Stakes"
         teamNames="SCAR"
-        description="The High Stakes season is currently being played and our team is preparing for the World Championship with a qualifcation through our #28 Skills ranking in the world. Our season has been successful and rewarding with a big thanks to your new sponser Whismy Tech supplying us with parts and a generous donation."
+        description=""
         captains="Mahdhav Rawal, Jouan Yu"
         leads="Andy Zhu, Marco Hu, Ivan Shi"
-        awards="TBD"
+        awards="Worlds Ranking: 25"
         image={img2425}
         />
         <Section
@@ -44,7 +44,7 @@ const History = () => {
         description=""
         captains="Kyle De Guzman, Brian Chen"
         leads="Jouan Yu, Mahdhav Rawal, Khoi Dinh, Andy Zhu"
-        awards="Tournament Champion, Robot Skills Champion, Worlds Ranking 17 & 24"
+        awards="Tournament Champion, Robot Skills Champion, Worlds Ranking: 17 & 24"
         image={img2324}
         />
         <Section

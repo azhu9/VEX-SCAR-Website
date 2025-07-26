@@ -24,10 +24,11 @@ const Navbar = () => {
           <img src={Logo} className=""  alt="logo"/>
         </Link>
         <ul className='hidden md:flex'>
-            <li className='p-4'><Link to="/home">Home</Link></li>
-            <li className='p-4'><Link to="/about">About Us</Link></li>
-            <li className='p-4'><Link to="/volunteering">Volunteering</Link></li>
-            <li className='p-4'><Link to="/contact">Contact</Link></li>
+            <li className='py-4 px-2'><Link to="/home" className=" hover:bg-gray-100 hover:text-black duration-300 px-4 py-2 rounded-md">Home</Link></li>
+            <li className='py-4 px-2'><Link to="/about" className=" hover:bg-gray-100 hover:text-black duration-300 px-4 py-2 rounded-md">About Us</Link></li>
+            <li className='py-4 px-2'><Link to="/volunteering" className=" hover:bg-gray-100 hover:text-black duration-300 px-4 py-2 rounded-md">Volunteering</Link></li>
+            <li className='py-4 px-2'><Link to="/sponsors" className=" hover:bg-gray-100 hover:text-black duration-300 px-4 py-2 rounded-md">Sponsors</Link></li>
+            <li className='py-4 px-2'><Link to="/contact" className=" hover:bg-gray-100 hover:text-black duration-300 px-4 py-2 rounded-md">Contact</Link></li>
 
 
         </ul>

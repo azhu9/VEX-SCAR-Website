@@ -4,6 +4,7 @@ import About from './pages/About';
 import NoPage from './pages/NoPage';
 import Contact from './pages/Contact';
 import Volunteering from './pages/Volunteering';
+import Sponsors from './pages/Sponsors';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/home" element={<Home/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/volunteering" element={<Volunteering/>} />
+          <Route path="/sponsors" element={<Sponsors/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="*" element={<NoPage/>} />
         </Routes>
