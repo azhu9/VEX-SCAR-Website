@@ -8,7 +8,7 @@ import { BsTools } from "react-icons/bs";
 const Awards = () => {
   return (
     <div className="bg-white w-full px-8 pb-8" id="awards-section">
-        <hr class="w-36 h-1 mx-auto bg-gray-100 border-0 rounded dark:bg-black"/>
+        <hr className="w-36 h-1 mx-auto bg-gray-100 border-0 rounded dark:bg-black"/>
         <div className=" h-full max-w-[1150px] mx-auto m-4" >
             <h1 className="text-black md:text-4xl sm:text-3xl text-2xl font-bold py-4 my-5">Awards and Achievements</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">

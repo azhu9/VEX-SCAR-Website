@@ -37,3 +37,23 @@ button {
   border-radius: 10px; /* Rounded corners */
   cursor: pointer;
 }
+
+
+.history-carousel .carousel .slide img {
+  width: 100%;
+  height: 500px;       /* adjust this height to fit your layout */
+  object-fit: cover;   /* ensures images fill without distortion */
+  border-radius: 0.5rem; /* optional: rounded corners */
+}
+
+.history-carousel .carousel .slide img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .history-carousel .carousel .slide img {
+    height: 500px;
+  }
+}
