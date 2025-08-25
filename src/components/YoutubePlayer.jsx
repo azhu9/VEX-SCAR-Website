@@ -1,5 +1,5 @@
 // src/components/YouTubePlayer.js
-import React from 'react';
+import React from "react";
 
 const YouTubePlayer = ({ videoId }) => (
   <div className="aspect-[16/9] rounded-lg overflow-hidden shadow-lg">
