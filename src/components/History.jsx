@@ -3,9 +3,9 @@ import React from "react";
 import { IoIosArrowDropdown } from "react-icons/io";
 import { FaTrophy, FaUsers, FaUserTie, FaUserCog } from "react-icons/fa";
 import Bg from "../assets/backgrounds/bg.webp";
-import YouTubePlayer from "./YouTubePlayer"; // Adjust path as needed
+import YouTubePlayer from "./YouTubePlayer";
 import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Don't forget the styles
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../index.css";
 
 import img2425 from "../assets/history/24-25.JPG";
@@ -21,7 +21,8 @@ export const historyData = [
   {
     title: "2024-25: High Stakes",
     teamNames: "SCAR",
-    description: "",
+    description:
+      "Thank you to our sponsors Whimsy Tech, Onshape, and Rutgers IDEA for a successful season",
     captains: "Mahdhav Rawal, Jouan Yu",
     leads: "Andy Zhu, Marco Hu, Ivan Shi",
     awards: "Worlds Ranking: 25",
@@ -49,8 +50,8 @@ export const historyData = [
   {
     title: "2021-22: Tipping Point",
     teamNames: "SKAR",
-    description: "Led by Jack Lowry and Agam Modasiya.",
-    captains: "",
+    description: "",
+    captains: "Jack Lowry, Agam Modasiya",
     leads: "",
     awards: "Judges Award, Design Award, Worlds Ranking: 2",
     videoId: "8isLmoizb6A",
@@ -121,7 +122,7 @@ const History = () => {
         />
         <div className="z-10 animate-fade md:text-7xl sm:text-6xl text-4xl font-bold title-text text-white">
           ABOUT US
-          <a href="#section">
+          <a href="#history-timeline">
             <IoIosArrowDropdown
               className="animate-bounce mx-auto my-8 cursor-pointer"
               size={40}

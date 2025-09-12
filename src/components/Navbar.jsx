@@ -1,17 +1,17 @@
-import React, {useState} from 'react';
-import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
-import Logo from '../assets/scar.png';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useState } from "react";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import Logo from "../assets/full-logo-clear-alt.png";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(true)
+  const [nav, setNav] = useState(true);
   const location = useLocation();
 
   const handleNav = () => {
-    setNav(!nav)
-  }
+    setNav(!nav);
+  };
 
-/* 
+  /* 
  - I am using <Link> for external pages since it does not refresh the page
  - The <a> tags are for internal links that scroll the page down which also do not refresh the pages
  - If <a> tags were used for external links they would refresh the entire page.
@@ -19,53 +19,93 @@ const Navbar = () => {
 
   return (
     <div className=" z-50 bg-black fixed w-full top-0">
-    <div className=' z-50 bg-black flex justify-between items-center h-[80px] max-w-[1440px] mx-auto px-4 text-white'>
+      <div className=" z-50 bg-black flex justify-between items-center h-[80px] max-w-[1440px] mx-auto px-4 text-white">
         <Link to="/home" className="block">
-          <img src={Logo} className=""  alt="logo"/>
+          <img src={Logo} className="h-16" alt="logo" />
         </Link>
-        <ul className='hidden md:flex'>
-            <li className='py-4 px-2'><Link to="/home" className=" hover:bg-gray-100 hover:text-black duration-300 px-4 py-2 rounded-md">Home</Link></li>
-            <li className='py-4 px-2'><Link to="/about" className=" hover:bg-gray-100 hover:text-black duration-300 px-4 py-2 rounded-md">About Us</Link></li>
-            <li className='py-4 px-2'><Link to="/volunteering" className=" hover:bg-gray-100 hover:text-black duration-300 px-4 py-2 rounded-md">Volunteering</Link></li>
-            <li className='py-4 px-2'><Link to="/sponsors" className=" hover:bg-gray-100 hover:text-black duration-300 px-4 py-2 rounded-md">Sponsors</Link></li>
-            <li className='py-4 px-2'><Link to="/contact" className=" hover:bg-gray-100 hover:text-black duration-300 px-4 py-2 rounded-md">Contact</Link></li>
-
-
+        <ul className="hidden md:flex">
+          <li className="py-4 px-2">
+            <Link
+              to="/home"
+              className=" hover:bg-gray-100 hover:text-black duration-300 px-4 py-2 rounded-md"
+            >
+              Home
+            </Link>
+          </li>
+          <li className="py-4 px-2">
+            <Link
+              to="/about"
+              className=" hover:bg-gray-100 hover:text-black duration-300 px-4 py-2 rounded-md"
+            >
+              About Us
+            </Link>
+          </li>
+          <li className="py-4 px-2">
+            <Link
+              to="/volunteering"
+              className=" hover:bg-gray-100 hover:text-black duration-300 px-4 py-2 rounded-md"
+            >
+              Volunteering
+            </Link>
+          </li>
+          <li className="py-4 px-2">
+            <Link
+              to="/sponsors"
+              className=" hover:bg-gray-100 hover:text-black duration-300 px-4 py-2 rounded-md"
+            >
+              Sponsors
+            </Link>
+          </li>
+          <li className="py-4 px-2">
+            <Link
+              to="/contact"
+              className=" hover:bg-gray-100 hover:text-black duration-300 px-4 py-2 rounded-md"
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
         <div onClick={handleNav} className="block md:hidden z-99">
-          {!nav ? <></> : <AiOutlineMenu size ={25}/>}
+          {!nav ? <></> : <AiOutlineMenu size={25} />}
         </div>
-        
-        <div className={`${ !nav ? 'z-50 fixed left-0 top-0 w-[100%] h-full bg-black border-r border-gray-700 drop-shadow-xl ease-in-out duration-300' : 'fixed left-[100%]'}`}>
-        
-        <div onClick={handleNav} className="block md:hidden h-[80px] py-2 m-5 fixed top-0 right-0">
-          {!nav ? <AiOutlineClose size={25}/> : <></>}
-        </div>
-        <div className="flex items-center justify-center text-white text-xl h-full">
-        <ul className="p-4 text-center space-y-10 w-1/2">
-        {[
-          { name: "Home", path: "/home" },
-          { name: "About Us", path: "/about" },
-          { name: "Volunteering", path: "/volunteering" },
-          { name: "Contact", path: "/contact" },
-        ].map((item) => (
-          <Link to={item.path} key={item.name} className="block my-5">
-            <li
-              className={`nav-list p-2 rounded ${
-                location.pathname === item.path ? "bg-gray-800" : ""
-              }`}
-            >
-              {item.name}
-            </li>
-          </Link>
-        ))}
-      </ul>
+
+        <div
+          className={`${
+            !nav
+              ? "z-50 fixed left-0 top-0 w-[100%] h-full bg-black border-r border-gray-700 drop-shadow-xl ease-in-out duration-300"
+              : "fixed left-[100%]"
+          }`}
+        >
+          <div
+            onClick={handleNav}
+            className="block md:hidden h-[80px] py-2 m-5 fixed top-0 right-0"
+          >
+            {!nav ? <AiOutlineClose size={25} /> : <></>}
+          </div>
+          <div className="flex items-center justify-center text-white text-xl h-full">
+            <ul className="p-4 text-center space-y-10 w-1/2">
+              {[
+                { name: "Home", path: "/home" },
+                { name: "About Us", path: "/about" },
+                { name: "Volunteering", path: "/volunteering" },
+                { name: "Contact", path: "/contact" },
+              ].map((item) => (
+                <Link to={item.path} key={item.name} className="block my-5">
+                  <li
+                    className={`nav-list p-2 rounded ${
+                      location.pathname === item.path ? "bg-gray-800" : ""
+                    }`}
+                  >
+                    {item.name}
+                  </li>
+                </Link>
+              ))}
+            </ul>
           </div>
         </div>
-        
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
