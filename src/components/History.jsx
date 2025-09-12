@@ -3,7 +3,6 @@ import React from "react";
 import { IoIosArrowDropdown } from "react-icons/io";
 import { FaTrophy, FaUsers, FaUserTie, FaUserCog } from "react-icons/fa";
 import Bg from "../assets/backgrounds/bg.webp";
-import YouTubePlayer from "./components/YouTubePlayer.jsx";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../index.css";
@@ -110,6 +109,20 @@ const DetailItem = ({ icon, label, value }) => {
     </div>
   );
 };
+
+const YouTubePlayer = ({ videoId }) => (
+  <div className="aspect-[16/9] rounded-lg overflow-hidden shadow-lg">
+    <iframe
+      src={`https://www.youtube.com/embed/${videoId}`}
+      title="YouTube video player"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+      className="w-full h-full"
+    ></iframe>
+  </div>
+);
+
 const History = () => {
   return (
     <>
