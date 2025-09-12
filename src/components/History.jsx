@@ -3,7 +3,7 @@ import React from "react";
 import { IoIosArrowDropdown } from "react-icons/io";
 import { FaTrophy, FaUsers, FaUserTie, FaUserCog } from "react-icons/fa";
 import Bg from "../assets/backgrounds/bg.webp";
-import YouTubePlayer from "./YouTubePlayer";
+import YouTubePlayer from "./components/YouTubePlayer.jsx";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../index.css";
