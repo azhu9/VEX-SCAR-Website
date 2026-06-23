@@ -7,6 +7,9 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../index.css";
 
+import img2526 from "../assets/history/25-26.JPG";
+import img25261 from "../assets/history/25-261.JPG";
+import img25262 from "../assets/history/25-262.JPG";
 import img2425 from "../assets/history/24-25.JPG";
 import worlds25 from "../assets/history/vexbots.webp";
 import img2324 from "../assets/carousel/vex2.jpg";
@@ -18,12 +21,22 @@ import img1718 from "../assets/history/17-18.jpg";
 
 export const historyData = [
   {
-    title: "2024-25: High Stakes",
+    title: "2025-26: Pushback",
     teamNames: "SCAR",
     description:
       "Thank you to our sponsors Whimsy Tech, Onshape, and Rutgers IDEA for a successful season",
+    captains: "Andy Zhu, Siddharth Paul",
+    leads: "Suzeyu George Cui, Ivan Shi",
+    awards: "Worlds Ranking: 17",
+    image: [img2526, img25261, img25262],
+  },
+  {
+    title: "2024-25: High Stakes",
+    teamNames: "SCAR",
+    description:
+      "Thank you to our sponsors Whimsy Tech, Onshape, JLC, and Rutgers IDEA for a successful season",
     captains: "Mahdhav Rawal, Jouan Yu",
-    leads: "Andy Zhu, Marco Hu, Ivan Shi",
+    leads: "Andy Zhu, Marco Hu, Siddharth Paul, Ivan Shi",
     awards: "Worlds Ranking: 25",
     image: [worlds25, img2425],
   },
