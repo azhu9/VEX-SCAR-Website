@@ -28,7 +28,7 @@ export const historyData = [
     captains: "Andy Zhu, Siddharth Paul",
     leads: "Suzeyu George Cui, Ivan Shi",
     awards: "Worlds Ranking: 17",
-    image: [img25262, img2526, img25261, ],
+    image: [img25262, img2526, img25261],
   },
   {
     title: "2024-25: High Stakes",
