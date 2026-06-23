@@ -7,7 +7,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../index.css";
 
-import img2526 from "../assets/history/25-26.JPG";
+import img2526 from "../assets/history/25-26.jpg";
 import img25261 from "../assets/history/25-261.JPG";
 import img25262 from "../assets/history/25-262.JPG";
 import img2425 from "../assets/history/24-25.JPG";
@@ -28,7 +28,7 @@ export const historyData = [
     captains: "Andy Zhu, Siddharth Paul",
     leads: "Suzeyu George Cui, Ivan Shi",
     awards: "Worlds Ranking: 17",
-    image: [img2526, img25261, img25262],
+    image: [img25262, img2526, img25261, ],
   },
   {
     title: "2024-25: High Stakes",
