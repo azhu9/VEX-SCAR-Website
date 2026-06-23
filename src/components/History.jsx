@@ -24,7 +24,7 @@ export const historyData = [
     title: "2025-26: Pushback",
     teamNames: "SCAR",
     description:
-      "Thank you to our sponsors Whimsy Tech, Onshape, and Rutgers IDEA for a successful season",
+      "Thank you to our sponsors Whimsy Tech, Onshape, JLC, and Rutgers IDEA for a successful season",
     captains: "Andy Zhu, Siddharth Paul",
     leads: "Suzeyu George Cui, Ivan Shi",
     awards: "Worlds Ranking: 17",
@@ -34,7 +34,7 @@ export const historyData = [
     title: "2024-25: High Stakes",
     teamNames: "SCAR",
     description:
-      "Thank you to our sponsors Whimsy Tech, Onshape, JLC, and Rutgers IDEA for a successful season",
+      "Thank you to our sponsors Whimsy Tech, Onshape, and Rutgers IDEA for a successful season",
     captains: "Mahdhav Rawal, Jouan Yu",
     leads: "Andy Zhu, Marco Hu, Siddharth Paul, Ivan Shi",
     awards: "Worlds Ranking: 25",
